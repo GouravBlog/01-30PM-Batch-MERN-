@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Systeam</title>
+</head>
+
+<body>
+
+    <!-- <style>
+        .container {
+            width: 100%;
+            border: 1px solid rgb(147, 210, 147);
+            height: 80vh;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: 5;
+            grid-template-columns: 4;
+        }
+
+        .common {
+
+            background-color: rgb(147, 210, 147);
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+        }
+
+        .two {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .three {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .six {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style> -->
+    <!-- 
+    <div class="container">
+        <div class="one common">Header</div>
+        <div class="two common">Side bar</div>
+        <div class="three common">Content-1</div>
+        <div class="four common">Content-2</div>
+        <div class="five common">Content-3</div>
+        <div class="six common">Footer</div>
+
+    </div> -->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: black;
+            padding: 10px;
+            display: grid;
+            gap: 10px;
+            grid-template-rows: 4;
+            grid-template-columns: 3;
+        }
+
+        .common {
+            background-color: aqua;
+            height: 30px;
+        }
+
+        .one {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: flex;
+            height: min-content;
+            justify-content: space-between;
+        }
+
+        .two {
+            height: 300px;
+        }
+
+        .three {
+            height: 300px;
+        }
+
+        .four {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .common-1 {
+            background-color: red;
+            height: 30px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 3px;
+        }
+
+        .common-2-1 {
+            background-color: red;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            border-radius: 50%
+        }
+
+        .common-2 {
+            background-color: red;
+            height: 30px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 3px
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="common one">
+            <div class="common-2-1"></div>
+            <div style="display: flex;">
+                <div class="common-2"></div>
+                <div class="common-2"></div>
+                <div class="common-2"></div>
+            </div>
+
+        </div>
+        <div class="common two"></div>
+        <div class="common three">
+            <div class="common-1"></div>
+            <div class="common-1"></div>
+            <div class="common-1"></div>
+            <div class="common-1"></div>
+            <div class="common-1"></div>
+        </div>
+        <div class="common four"></div>
+    </div>
+
+</body>
+
+</html>
